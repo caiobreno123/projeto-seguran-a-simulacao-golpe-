@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação Educativa – Golpe no WhatsApp</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f9; color: #333; }
+    header { background: #25d366; color: white; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+    main { max-width: 700px; margin: 30px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .msg { background: #dcf8c6; padding: 15px; border-radius: 10px; margin: 10px 0; }
+    .alerta { border: 2px solid red; background: #ffe5e5; }
+    .botao { background: #25d366; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+    .botao:hover { background: #1ebd5a; }
+    .aviso { display: none; margin-top: 20px; padding: 15px; border-radius: 8px; background: #ffefc5; border: 1px solid #e6b800; }
+    .checklist { margin-top: 20px; }
+    .checklist li { margin-bottom: 8px; }
+    footer { margin-top: 30px; padding: 15px; text-align: center; font-size: 14px; background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <header>⚠️ Simulação Educativa – Golpe no WhatsApp</header>
+  <main>
+    <h2>Mensagem recebida:</h2>
+    <div class="msg alerta">
+      "Oi, é o João! Preciso de um favor URGENTE. Pode transferir R$ 500 para mim? Prometo devolver amanhã. Clique aqui: <a href="#" id="linkGolpe">bit.ly/meu-pix-falso</a>"
+    </div>
+
+    <button class="botao" id="btnAbrir">Abrir link</button>
+
+    <div class="aviso" id="aviso">
+      🚨 <strong>Atenção!</strong> Este é um exemplo educativo de <b>golpe do WhatsApp</b>.<br><br>
+      Nunca clique em links suspeitos e sempre confirme a identidade da pessoa por outro meio antes de transferir dinheiro.
+    </div>
+
+    <h3>Como identificar o golpe?</h3>
+    <ul class="checklist">
+      <li>🔴 Urgência no pedido ("preciso agora").</li>
+      <li>🔴 Solicitação de dinheiro de forma inesperada.</li>
+      <li>🔴 Link encurtado ou suspeito.</li>
+      <li>🔴 Mensagem que parece fora do comum.</li>
+    </ul>
+
+    <h3>Boas práticas de segurança:</h3>
+    <ul>
+      <li>✅ Ative a verificação em duas etapas no WhatsApp.</li>
+      <li>✅ Confirme pedidos de dinheiro por ligação ou pessoalmente.</li>
+      <li>✅ Desconfie sempre de mensagens urgentes e links estranhos.</li>
+    </ul>
+  </main>
+
+  <footer>
+    📌 Material educativo para conscientização digital. Nenhum dado é coletado. <br>
+    Desenvolvido para fins escolares.
+  </footer>
+
+  <script>
+    document.getElementById("btnAbrir").addEventListener("click", function() {
+      document.getElementById("aviso").style.display = "block";
+    });
+  </script>
+</body>
+</html>
